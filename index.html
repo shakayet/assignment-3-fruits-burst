@@ -11,11 +11,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="w-auto bg-[#fdf2f8]">
+<body class="w-auto">
     <header>
         <!-- Navigation bar start here -->
         <nav>
-            <div class="flex justify-around bg-[#F85559] text-white h-20 rounded-full mx-10  my-10 lg:mx-28">
+            <!-- For mobile view -->
+            <div class="flex justify-between px-5 py-5 md:hidden">
+                <div class="flex gap-2 items-center">
+                    <div>
+                        <img class="w-[40px]" src="images/logo.png" alt="">
+                    </div>
+                    <h1>Fruit Burst</h1>
+                </div>
+                <div>
+                    <img src="icon/Frame.svg" alt="">
+                </div>
+            </div>
+            
+            <!-- For medium and large device -->
+            <div class="hidden md:flex justify-around bg-[#F85559] text-white h-20 rounded-full mx-10  my-10 lg:mx-28">
                 <div class="hidden md:flex gap-5 items-center">
                     <a href="">Home</a>
                     <a href="">About Us</a>
@@ -44,7 +58,7 @@
 
         <!-- Slider banner section start from here -->
         <section>
-            <div class="carousel w-auto md:mx-28">
+            <div class="carousel w-auto mx-5 md:mx-28">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="images/banner1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -74,10 +88,11 @@
                     </div>
                 </div>
             </div>
-            <div class=" text-white relative bottom-[450px] text-center">
-                <h1 class="text-6xl font-bold pb-4">Exotic tastes at your <br> doorstep</h1>
-                <p class="pb-5">We supply highly quality organic products</p>
-                <!-- <h1 class=" text-white">Shop Now</h1> -->
+            
+            <div class="text-white text-center absolute bottom-[460px] left-[30px] md:relative md:bottom-[450px] md:left-[20px]">
+                <h1 class="text-lg font-normal md:font-bold md:text-6xl">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-sm md:pb-5">We supply highly quality organic products</p>
+                <!-- <h1 class=" text-white md:hidden">Shop Now</h1> -->
             </div>
             <div
                 class="hidden lg:flex gap-7 justify-center items-center bg-slate-100 absolute bottom-[50px] left-[240px] w-[900px] h-[120px]">
@@ -105,12 +120,12 @@
         </section>
     </header>
     <!-- Deal of the day section start from here -->
-    <main class="mx-24">
+    <main class="md:mx-24">
         <section>
             <div>
-                <div class="flex justify-between">
-                    <div>
-                        <h1 class="text-5xl font-bold mb-7">Deal of the day</h1>
+                <div class="md:flex justify-between">
+                    <div class="text-center py-5 md:text-left">
+                        <h1 class="text-xl md:text-5xl font-bold mb-7">Deal of the day</h1>
                         <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical
                             <br> Latin
                             literature from 45 BC, making it over 2000 years old.
@@ -146,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-4 gap-2 mt-9">
+            <div class="grid gap-2 grid-cols-1 mt-9 md:grid-cols-4">
                 <!-- 1st deal -->
                 <div class="flex">
                     <div class="p-16 border bg-white shadow-2xl">
@@ -397,12 +412,12 @@
         <!-- Meet the team section -->
         <section>
             <div class=" text-white bg-opacity-90" style="background-image: url('images/banner1.png');">
-                <div class="text-white text-center py-12 text-neutral-400">
-                    <h1 class="text-5xl font-bold pt-5 pb-3">Meet the team section</h1>
+                <div class="text-white text-center py-12 px-5">
+                    <h1 class="text-xl font-medium md:text-5xl font-bold pt-5 pb-3">Meet the team section</h1>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                         Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="flex justify-around px-10 pb-16">
+                <div class="pt-5 pb-5 md:flex justify-around px-10">
                     <!-- 1st member -->
                     <div class="flex flex-col items-center">
                         <div class="pb-5">
@@ -410,20 +425,20 @@
                         </div>
                         <h1 class="text-2xl">Awlad Hossain</h1>
                         <p class="py-2">Fruits Expert</p>
-                        <div class="flex gap-3">
+                        <div class="flex gap-3 pb-8">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/facebook 1.svg" alt="">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/twitter 1.svg" alt="">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/linkedin 1.svg" alt="">
                         </div>
                     </div>
                     <!-- 2nd member -->
-                    <div class="flex flex-col items-center">
+                    <div class="flex items-center flex-col">
                         <div class="pb-5">
                             <img src="images/member2.png" alt="">
                         </div>
                         <h1 class="text-2xl">Shafia Chowdhury</h1>
                         <p class="py-2">Fruits Expert</p>
-                        <div class="flex gap-3">
+                        <div class="flex gap-3 pb-8">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/facebook 1.svg" alt="">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/twitter 1.svg" alt="">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/linkedin 1.svg" alt="">
@@ -436,14 +451,14 @@
                         </div>
                         <h1 class="text-2xl">Rokib Hossain</h1>
                         <p class="py-2">Fruits Expert</p>
-                        <div class="flex gap-3">
+                        <div class="flex gap-3 pb-8">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/facebook 1.svg" alt="">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/twitter 1.svg" alt="">
                             <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/linkedin 1.svg" alt="">
                         </div>
                     </div>
                     <!-- 4th member -->
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center pb-8">
                         <div class="pb-5">
                             <img src="images/member4.png" alt="">
                         </div>
@@ -467,7 +482,7 @@
                     <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of
                         classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="flex">
+                <div class="text-center md:flex">
                     <div>
                         <div>
                             <h1 class="text-2xl font-bold pb-2">Dedicated Team</h1>
@@ -488,7 +503,7 @@
                     <div>
                         <img src="images/whychoose1.png" alt="">
                     </div>
-                    <div class="text-right">
+                    <div class="text-center md:text-right">
                         <div>
                             <h1 class="text-2xl font-bold pb-2">Dedicated Team</h1>
                             <p class="pb-3">Professional employees are there for you to pick the most amazing and fresh
@@ -540,5 +555,4 @@
         </div>
     </footer>
 </body>
-
 </html>
