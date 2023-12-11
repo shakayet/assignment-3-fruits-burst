@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="w-auto">
+<body class="w-auto bg-[#fdf2f8]">
     <header>
         <!-- Navigation bar start here -->
         <nav>
@@ -77,9 +77,10 @@
             <div class=" text-white relative bottom-[450px] text-center">
                 <h1 class="text-6xl font-bold pb-4">Exotic tastes at your <br> doorstep</h1>
                 <p class="pb-5">We supply highly quality organic products</p>
-                <button class="btn btn-error text-white">Shop Now</button>
+                <!-- <h1 class=" text-white">Shop Now</h1> -->
             </div>
-            <div class="hidden lg:flex gap-7 justify-center items-center bg-slate-100 relative bottom-[300px] left-[240px] w-[900px] h-[120px]">
+            <div
+                class="hidden lg:flex gap-7 justify-center items-center bg-slate-100 absolute bottom-[50px] left-[240px] w-[900px] h-[120px]">
                 <div class="w-[100px]">
                     <img src="images/fruit1.png" alt="">
                     <p>Strawberry</p>
@@ -103,11 +104,440 @@
             </div>
         </section>
     </header>
-    <main class="mx-10px md:mx-16px lg:mx-24px">
+    <!-- Deal of the day section start from here -->
+    <main class="mx-24">
+        <section>
+            <div>
+                <div class="flex justify-between">
+                    <div>
+                        <h1 class="text-5xl font-bold mb-7">Deal of the day</h1>
+                        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            <br> Latin
+                            literature from 45 BC, making it over 2000 years old.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:15;"></span>
+                                </span>
+                                days
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:10;"></span>
+                                </span>
+                                hours
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:24;"></span>
+                                </span>
+                                min
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:45;"></span>
+                                </span>
+                                sec
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 gap-2 mt-9">
+                <!-- 1st deal -->
+                <div class="flex">
+                    <div class="p-16 border bg-white shadow-2xl">
+                        <div>
+                            <div class="pl-5">
+                                <img src="images/fruit6.png" alt="">
+                            </div>
+                            <h1 class="text-[#121212] text-xl font-bold my-3 text-center">12.90$ - 18.85$</h1>
+                            <hr>
+                            <p class="my-3 text-center">Apple</p>
+                        </div>
+                        <div>
+                            <div class="rating mb-3">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            </div>
+                        </div>
+                        <div class="text-[#F85559] text-center popup">
+                            <button class="btn btn-ghost" onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <div class="modal-box">
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div class="flex justify-center">
+                                                        <img src="images/fruit6.png" alt="">
+                                                    </div>
+                                                    <h1 class="text-[#121212] text-xl font-bold my-3 text-center">Apple</h1>
+                                                    <p class="my-3 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                                </div>
+                                                <div>
+                                                    <div class="rating mb-3">
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <div class="flex pr-36 gap-5">
+                                                <button class="btn btn-ghost border-[#F85559]">Close</button>
+                                                <button class="btn btn-error text-white">Buy Now</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd banner -->
+                <div class="flex">
+                    <div class="p-16 border bg-white shadow-2xl">
+                        <div>
+                            <div class="pl-2">
+                                <img src="images/fruit7.png" alt="">
+                            </div>
+                            <h1 class="text-[#121212] text-xl font-bold my-3 text-center">12.90$ - 18.85$</h1>
+                            <hr>
+                            <p class="my-3 text-center">Orange</p>
+                        </div>
+                        <div>
+                            <div class="rating mb-3">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            </div>
+                        </div>
+                        <div class="text-[#F85559] text-center popup">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn btn-ghost" onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box">
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div class="flex justify-center">
+                                                        <img src="images/fruit7.png" alt="">
+                                                    </div>
+                                                    <h1 class="text-[#121212] text-xl font-bold my-3 text-center">Orange</h1>
+                                                    <p class="my-3 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                                </div>
+                                                <div>
+                                                    <div class="rating mb-3">
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <div class="flex pr-36 gap-5">
+                                                <button class="btn btn-ghost border-[#F85559]">Close</button>
+                                                <button class="btn btn-error text-white">Buy Now</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd banner -->
+                <div class="flex">
+                    <div class="p-16 border bg-white shadow-2xl">
+                        <div>
+                            <div class="pl-5">
+                                <img src="images/fruit8.png" alt="">
+                            </div>
+                            <h1 class="text-[#121212] text-xl font-bold my-3 text-center">12.90$ - 18.85$</h1>
+                            <hr>
+                            <p class="my-3 text-center">Red Dragon</p>
+                        </div>
+                        <div>
+                            <div class="rating mb-3">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            </div>
+                        </div>
+                        <div class="text-[#F85559] text-center">
+                            <button class="btn btn-ghost" onclick="my_modal_3.showModal()">Details</button>
+                            <dialog id="my_modal_3" class="modal">
+                                <div class="modal-box">
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div class="flex justify-center">
+                                                        <img src="images/fruit8.png" alt="">
+                                                    </div>
+                                                    <h1 class="text-[#121212] text-xl font-bold my-3 text-center">Red Dragon</h1>
+                                                    <p class="my-3 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                                </div>
+                                                <div>
+                                                    <div class="rating mb-3">
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <div class="flex pr-36 gap-5">
+                                                <button class="btn btn-ghost border-[#F85559]">Close</button>
+                                                <button class="btn btn-error text-white">Buy Now</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th banner -->
+                <div class="flex">
+                    <div class="p-16 border bg-white shadow-2xl">
+                        <div>
+                            <div class="pl-5">
+                                <img src="images/fruit9.png" alt="">
+                            </div>
+                            <h1 class="text-[#121212] text-xl font-bold my-3 text-center">12.90$ - 18.85$</h1>
+                            <hr>
+                            <p class="my-3 text-center">Banana</p>
+                        </div>
+                        <div>
+                            <div class="rating mb-3">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            </div>
+                        </div>
+                        <div class="text-[#F85559] text-center">
+                            <button class="btn btn-ghost" onclick="my_modal_4.showModal()">Details</button>
+                            <dialog id="my_modal_4" class="modal">
+                                <div class="modal-box">
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    <div class="flex justify-center">
+                                                        <img src="images/fruit9.png" alt="">
+                                                    </div>
+                                                    <h1 class="text-[#121212] text-xl font-bold my-3 text-center">Banana</h1>
+                                                    <p class="my-3 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                                </div>
+                                                <div>
+                                                    <div class="rating mb-3">
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <div class="flex pr-36 gap-5">
+                                                <button class="btn btn-ghost border-[#F85559]">Close</button>
+                                                <button class="btn btn-error text-white">Buy Now</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 text-center mb-16">
+                <button class="btn btn-error bg-[#F85559] text-white">Shop All</button>
+            </div>
+        </section>
 
+        <!-- Meet the team section -->
+        <section>
+            <div class=" text-white bg-opacity-90" style="background-image: url('images/banner1.png');">
+                <div class="text-white text-center py-12 text-neutral-400">
+                    <h1 class="text-5xl font-bold pt-5 pb-3">Meet the team section</h1>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex justify-around px-10 pb-16">
+                    <!-- 1st member -->
+                    <div class="flex flex-col items-center">
+                        <div class="pb-5">
+                            <img src="images/member1.png" alt="">
+                        </div>
+                        <h1 class="text-2xl">Awlad Hossain</h1>
+                        <p class="py-2">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/facebook 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/twitter 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/linkedin 1.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- 2nd member -->
+                    <div class="flex flex-col items-center">
+                        <div class="pb-5">
+                            <img src="images/member2.png" alt="">
+                        </div>
+                        <h1 class="text-2xl">Shafia Chowdhury</h1>
+                        <p class="py-2">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/facebook 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/twitter 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/linkedin 1.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- 3rd member -->
+                    <div class="flex flex-col items-center">
+                        <div class="pb-5">
+                            <img src="images/member3.png" alt="">
+                        </div>
+                        <h1 class="text-2xl">Rokib Hossain</h1>
+                        <p class="py-2">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/facebook 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/twitter 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/linkedin 1.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- 4th member -->
+                    <div class="flex flex-col items-center">
+                        <div class="pb-5">
+                            <img src="images/member4.png" alt="">
+                        </div>
+                        <h1 class="text-2xl">Chaity</h1>
+                        <p class="py-2">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/facebook 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/twitter 1.svg" alt="">
+                            <img class="bg-[#F85559] rounded-full w-[25px] h-[25px]" src="icon/linkedin 1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why choose us -->
+        <section>
+            <div class="my-20">
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold">Why Choose Us</h1>
+                    <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex">
+                    <div>
+                        <div>
+                            <h1 class="text-2xl font-bold pb-2">Dedicated Team</h1>
+                            <p class="pb-3">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold pb-2">Fresh is Best</h1>
+                            <p class="pb-3">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold pb-2">Gift Certificates</h1>
+                            <p class="pb-3">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/whychoose1.png" alt="">
+                    </div>
+                    <div class="text-right">
+                        <div>
+                            <h1 class="text-2xl font-bold pb-2">Dedicated Team</h1>
+                            <p class="pb-3">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold pb-2">Fresh is Best</h1>
+                            <p class="pb-3">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold pb-2">Gift Certificates</h1>
+                            <p class="pb-3">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Footer section start from here -->
     <footer>
-
+        <div class="text-white bg-[#121212] py-24">
+            <div>
+                <div class="flex justify-center gap-3 items-center">
+                    <div>
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-medium">Fruit Burst</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-8 py-8">
+                <a href="">Home</a>
+                <a href="">About us</a>
+                <a href="">Shop</a>
+                <a href="">All Fruits</a>
+                <a href="">Support</a>
+                <a href="">My Account</a>
+            </div>
+            <div class="flex justify-center gap-10">
+                <a href="https://www.twitter.com"><img class="w-[25px]" src="icon/twitter 1.svg" alt=""></a>
+                <a href="https://www.facebook.com"><img class="w-[25px]" src="icon/facebook 1.svg" alt=""></a>
+                <a href="https://www.linkedin.com"><img class="w-[25px]" src="icon/linkedin 1.svg" alt=""></a>
+                <a href="https://www.instagram.com"><img class="w-[25px]" src="icon/instagram 1.svg" alt=""></a>
+                <a href=""><img class="w-[25px]" src="icon/apple 1.svg" alt=""></a>
+            </div>
+        </div>
     </footer>
 </body>
 
